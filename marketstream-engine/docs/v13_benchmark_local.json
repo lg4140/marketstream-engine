@@ -1,0 +1,32 @@
+{
+  "mode": "e2e",
+  "requested_rows": 10000,
+  "repetitions": 3,
+  "median_elapsed_s": 0.683677,
+  "median_throughput_rows_s": 14631.18,
+  "max_process_rss_mib": 129.09,
+  "python": "3.13.5",
+  "pandas": "2.2.3",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "measurements": [
+    {
+      "elapsed_s": 0.672852,
+      "actual_rows": 10003,
+      "peak_rss_mib": 129.09,
+      "throughput_rows_per_s": 14866.57
+    },
+    {
+      "elapsed_s": 0.74895,
+      "actual_rows": 10003,
+      "peak_rss_mib": 128.72,
+      "throughput_rows_per_s": 13356.03
+    },
+    {
+      "elapsed_s": 0.683677,
+      "actual_rows": 10003,
+      "peak_rss_mib": 128.78,
+      "throughput_rows_per_s": 14631.18
+    }
+  ],
+  "limitations": "Synthetic only; fresh process each repetition; no legacy baseline; RSS is process high-water, not incremental allocation; no plot"
+}

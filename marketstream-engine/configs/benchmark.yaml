@@ -1,0 +1,25 @@
+output_dir: outputs/benchmark
+input_dir: null
+n_stocks: 10
+n_snapshots: 10000
+dates: ["20210104"]
+seed: 42
+snapshot_period_seconds: 3
+trade_every_n_snapshots: 5
+join_tolerance: 30s
+resample_rule: 10min
+on_invalid: fail
+save_figure: false
+figure_symbol: "1"
+figure_date: null
+
+tick_size: 0.01
+trade_consistency: strict
+amount_minor_units_per_unit: null
+
+# Requested chart without source rows fails by default.
+figure_missing: fail
+quality_gates:
+  min_trade_match_rate: null
+  per_symbol_day_min_match_rate: null
+  on_breach: fail
